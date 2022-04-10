@@ -1,0 +1,113 @@
+body{
+	font-family: 'Inter', sans-serif;
+	margin: 0;
+}
+
+
+.wrap{
+
+    background-color: white;
+    min-height: 100vh;
+}
+
+a{
+	text-decoration: none;
+}
+
+.hero{    
+    color: #fff;
+    background: linear-gradient(90deg, rgba(231, 195, 195, 0.99) 0%, rgba(113, 118, 190, 0.68) 100%);
+    padding: 2em 0;
+}
+.user-info{
+    display: flex;
+    flex-flow: column;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.back-btn{
+    color: #fff;
+    font-size: 1.7em;
+    padding-left: 1em;
+}
+
+.btn-add{
+	background: linear-gradient(90deg, rgba(231, 195, 195, 0.99) 0%, rgba(113, 118, 190, 0.68) 100%);
+	color: #fff;	
+    font-size: 1.7em;
+	border-radius: 50px !important;
+	border: none;
+}
+
+.contacts-library{
+	background: #313438;
+}
+
+.add{
+	color: #fff;
+	font-size: 1.5em;
+}
+h1{
+    flex: 0.8;
+    padding-left: 10;
+}
+i{
+	color: #fff;
+	font-size: 1.5em;
+    
+}
+
+.contact-name{
+	color: #fff;
+	font-size: 1.2em;
+}
+
+
+ul{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+hr{
+	border: 1px solicontactd #494a4b;
+}
+
+.list__item{
+	list-style: none;
+}
+.head__name{
+    text-align: center;
+	color: rgb(255, 255, 255);
+	font-size: 1.2em;
+}
+
+.relationship{
+	color: #fff;
+	width: 6em;
+	text-align: center;
+	padding: .4em .5em;
+	border-radius: 100px;
+	background-color: #75A85E;
+}
+.contact-phone{
+    color: #fff;
+	font-size: 1; 
+}
+
+.contact-section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1.5em;
+	transition: 0.3s;
+}
+
+.contact-section:hover{
+	background-color: #48494a;
+}
+
+.text{
+	padding-left: 1em;
+}

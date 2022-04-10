@@ -1,0 +1,54 @@
+.ri-checkbox-circle-fill{
+    font-size: 2.25em;
+    color: #e0c0c5;
+}
+
+.ri-arrow-left-circle-fill{
+    font-size: 2.25em;
+    color: #e0c0c5;
+}
+
+
+.order-1{
+    text-decoration: none !important;
+}
+.order-3{
+    text-decoration: none !important;
+
+}
+
+.modal-title{
+    margin-top: 0.375em;
+}
+
+.rounded-circle{
+    width: 7.8125em;
+    height: 7.8125em;
+}
+
+.box-element{
+    -webkit-box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+    box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+    border-radius: 10px;
+    padding: 0.625em;
+    background-color: #f7f5f5;
+    color: #2b2529c2;
+}
+
+.form-element{
+    margin: 0.9375em 0.9375em;
+}
+
+.form-element label{
+    width: 6.25em;
+    display: inline-block;
+    font-size:1.125em;
+}
+
+.form-element input {
+    margin: 0.625em;
+    padding: 0.625em;
+    outline: none;
+    border: 1px solid;
+    border-radius: 5px;
+}
