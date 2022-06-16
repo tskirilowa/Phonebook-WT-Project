@@ -26,8 +26,6 @@ body{
 .fa{
     font-size:24px;
     color: white;
-    line-height: 39px;
-    border-radius: 10px;
 }
 .filter-result .user-box {
   -webkit-box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
@@ -37,7 +35,6 @@ body{
   
   background-color: white;
   color: #2b2529c2;
-  
 }
 
 .user-box .img-holder {
@@ -59,10 +56,8 @@ body{
 .mb-30 {
     margin-bottom: 30px;
 }
-input[type=button] {
-    border: none;
+
+.ri-more-2-line{
+    border: none !important;
+    text-decoration: none !important;
 }
-
-
-
-
