@@ -52,24 +52,22 @@
                     </div>
 
 
-                    <form class="filter-result" id="Parent" method="get" action="/user_profile">
-                        <%personList.forEach(person => {%>
-                            <div class="user-box d-md-flex align-items-center justify-content-between mb-30">
+                    <div class="filter-result" id="Parent">
+                        <%personList.forEach(function (personList) {%>
+                            <div class="user-box d-md-flex align-items-center justify-content-between mb-30" id="child_person">
                                 <div class="user-left my-4 d-md-flex align-items-center flex-wrap">
-                                    <img class="img-holder mr-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex" src=<%= person.img %>>
+                                    <img class="img-holder mr-md-4 mb-md-0 mb-4 mx-auto mx-md-0 d-md-none d-lg-flex" src="<%= personList.img %>">
                                     <div class="user-content">
-                                        <h5 class="text-center text-md-left"><%= person.name %></h5>
+                                        <h5 class="text-center text-md-left"><%= personList.name %></h5>
                                     </div>
                                 </div>
-                                <div class="user-right my-4 d-md-flex align-items-center flex-wrap justify-content-between mb-30">
-                                <h6 class="text-center text-sm-right justify-content-space-between"><%= person.phone %></h6>
-                                <button form="Parent">
-                                 <i class="fa-solid fa-circle-info " style="color: rgba(231, 195, 195, 0.99);" ></i>
-                                </button>
-                            </div>
+                                <h6 class="text-center text-md-right"><%= personList.phone %></h6>
+                                <a onclick="location.href='/user_profile/<%= personList._id %>'">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                </a>
                             </div>
                         <%})%>
-                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -84,16 +82,16 @@
                     <a type="button" class="order-1" data-dismiss="modal" aria-label="Close">
                         <i class="ri-arrow-left-circle-fill"></i>
                     </a>
-                    <button id = "save-user" form="new-user-form" class="order-3">
+                    <button type="submit" id = "save-user" form="new-user-form" class="order-3">
                         <i class="ri-checkbox-circle-fill"></i>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form class="form-element box-element" id="new-user-form" method="post" action="/add">
+                    <form class="form-element box-element" id="new-user-form" method="post" action="/add" enctype="multipart/form-data">
 
                         <div class="form-element text-center">
                             <label>
-                                <input type="file" name="image" id="image-input"  style="display:none" accept="image/jpeg, image/png, image/jpg">
+                                <input type="file" name="image" id="image-input"  style="display:none" accept="image/jpeg, image/png, image/jpg" onchange="loadFile(event)">
     
                                 <img id="display-image" class = "rounded-circle" src="img_icon.jpg">
                             </label>                       
@@ -103,18 +101,17 @@
                         <input type="text" name="name" placeholder="Name">
 
                         <label for="phone">Phone:</label>
-                        <input type="text" name="phone" placeholder="Phone number">
+                        <input type="tel" name="phone" id="phone" placeholder="Phone number" pattern="^[0]\d{9,9}$" title="Phone number is not valid">
 
                         <label for="email">Email: </label>
-                        <input type="text" name="email" placeholder="Email">
+                        <input type="email" name="email" id="email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" title="Email is not valid">
 
-                       <!-- <button>Save</button> -->
                     </form>
                 </div>
             </div>
         </div>
     </div>
-    <script src="upload_image.js" defer></script>
     <script src="predict-search.js" defer></script>
+    <script src="preview_image_add.js" defer></script>
 </body>
 </html>
