@@ -1,0 +1,68 @@
+body{   
+    background: linear-gradient(90deg, rgba(231, 195, 195, 0.99) 0%, rgba(113, 118, 190, 0.68) 100%);
+    margin-top:20px;
+}
+
+.contact-search{
+	font-size: 1.2em;
+	padding:.3em .3em;
+	border-radius: 100px;
+    color: white;
+	outline: none;
+    margin: 10px;
+}
+::placeholder {
+    padding-left: 10px;
+    color: white;
+  }
+
+.form-control{
+    border-radius: 100px;
+}
+
+.fas{
+    color: white;
+}
+.fa{
+    font-size:24px;
+    color: white;
+    line-height: 39px;
+    border-radius: 10px;
+}
+.filter-result .user-box {
+  -webkit-box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+          box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+  border-radius: 10px;
+  padding: 10px 35px;
+  
+  background-color: white;
+  color: #2b2529c2;
+  
+}
+
+.user-box .img-holder {
+  height: 65px;
+  width: 65px;
+  color:#2b2529;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 65px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+input[type=button] {
+    border: none;
+}
+
+
+
+

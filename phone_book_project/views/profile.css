@@ -1,0 +1,143 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+}
+
+.container{
+    background-color: white;
+    min-height: 100vh;
+}
+
+.hero{
+    color: #fff;
+    background: linear-gradient(90deg, rgba(231, 195, 195, 0.99) 0%, rgba(113, 118, 190, 0.68) 100%);
+    padding-top: 2em;
+    max-height: 310px;
+}
+
+.back-btn{
+    color: #fff;
+    font-size: 1.7em;
+    padding-left: 1em;
+}
+
+.contact-info{
+    padding: 3em 1.5em;
+}
+
+.user-info{
+    display: flex;
+    flex-flow: column;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.relationship{
+    width: 5em;
+    text-align: center;
+    padding: .4em .5em;
+    border-radius: 100px;
+    border-top-left-radius: 0;
+    margin-top: -10px;
+}
+
+.information{
+    display: flex;
+    color: #2b2529;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+    padding: 1em 2em;
+    margin-top: 2em;
+    -webkit-box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+    box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+    border-radius: 10px;
+}
+
+.fas{
+    color: #fff;
+}
+
+.profilePic{
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#picture {    
+    border-radius: 50%;
+    align-self: center;
+    margin-top: 0.3rem;
+    height: 180px;
+    width: 180px;
+}
+
+p{
+    margin: 0;
+    padding-left: 2em;
+    color: #494a4b;
+}
+
+.icon-gradient{
+    background: linear-gradient(90deg, rgba(231, 195, 195, 0.99) 0%, rgba(113, 118, 190, 0.68) 100%);
+    border-radius: 100px;
+    font-size: 1.5em;
+    padding: .5em;
+}
+
+#location{
+    padding: .5em .6em;
+}
+
+.edit-contact{
+    padding: 2.5em 3.5em;
+    text-align: center;
+    color: #fff;
+}
+
+.dropbutton {
+    background-color: rgba(113, 118, 190, 0.78);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    right: 0;
+}
+
+.dropup-content {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropup {
+    position: absolute;
+    padding-bottom: 2em;
+    right: 150px;
+}
+
+.dropup-content a {
+    color: #3d3a3a;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropup-content a:hover {background-color: #ddd}
+
+.dropup:hover .dropup-content {
+    display: block;
+}
+
+.dropup:hover .dropbutton {
+    background-color: #eebfcd;
+}
