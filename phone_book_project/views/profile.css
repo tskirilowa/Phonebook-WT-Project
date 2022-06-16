@@ -63,7 +63,7 @@ body{
 }
 
 .profilePic{
-    height: 170px;
+    height: auto;
     display: flex;
     flex-direction: column;
     margin-top: 10px;
